@@ -1,0 +1,24 @@
+<p>book works!</p>
+
+<h1>DATE  :  {{todayDate | date:'full'}} </h1>
+
+<div >
+    <button (click)="callValue('badminton')">BADMINTON</button>
+    <button (click)="callValue('Cricket')">CRICKET</button>
+    <button (click)="callValue('Hockey')">Hockey</button>
+    <button (click)="callValue('chess')">chess</button>
+    
+</div>
+<br><br>
+<br><br>
+
+<div>
+    <form [formGroup]="myTableData">
+        name :    <input type="text" formControlName="Name" ><br><br>
+        Phone no.:<input type="number" formControlName="Phone"><br><br>
+        Email :  <input type="text" formControlName="Email" ><br><br>
+
+        <button (click)="shoDataOnConsole()">submit</button>
+    </form>
+    
+</div>

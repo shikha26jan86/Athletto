@@ -1,0 +1,45 @@
+<p>table works!</p>
+
+<div class="container m-2 p-5">
+    <table class="table table table-stripted">
+        <thead >
+            <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>state</th>
+                <th>salary</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of TableData">
+                <th>{{item.name}}</th>
+                <th>{{item.age}}</th>
+                <th>{{item.state}}</th>
+                <th>{{item.salary}}</th>
+            </tr>
+        </tbody>
+    
+    </table>
+
+    <table class="table table table-stripted">
+        <thead >
+            <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>state</th>
+                <th>salary</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of resultArr">
+                <th>{{item.name}}</th>
+                <th>{{item.age}}</th>
+                <th>{{item.state}}</th>
+                <th>{{item.salary}}</th>
+            </tr>
+        </tbody>
+    
+    </table>
+</div>

@@ -1,0 +1,24 @@
+<h1>VENUE DETAILS</h1>
+
+<div *ngIf="ApiData">
+    <h1>name : {{ ApiData.name}}}</h1>
+    <h1> start_time  : {{ApiData.start_time}}</h1>
+    <h1>end_time  : {{ApiData.end_time}}</h1>
+    <h1>address : {{ApiData.address}}</h1>
+
+</div>
+
+<div>
+    <table border="20px">
+        <tr>
+            <th colspan="4"> TIME SLOTS</th>
+        </tr>
+        <tr>
+            <th>Day :</th>
+            <th>time :1PM - 2PM </th>
+            <th>time :2PM - 3PM </th>
+            <th>time :3PM - 4PM </th>
+            <th>time :4PM - 5PM </th>
+        </tr>
+    </table>
+</div>

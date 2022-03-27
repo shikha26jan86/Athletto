@@ -1,0 +1,38 @@
+{{myvalue}}
+<div style="background-color:bisque ;margin-top:20px;margin-left:50px;margin-right:50px;">
+    
+    <div id="id1">
+        <div>
+            <button (click)="Venue()" class="cl1" style="height: 100; width: 100; color: blue;">VENUE DETAILS</button>
+            <button (click)="bookCall()"class="cl2" style="color: blue; margin-block: 200;">BOOK</button>
+            <button class=cl3 style="color: blue;">PLAY</button>
+            <button style="width: 30%; height: 30%;" (click)="logIn()">LOGIN</button>
+        </div>
+        
+    </div>
+    <br>
+          
+    SEARCH :
+    <select (change)="onChange()" [(ngModel)]="selectedValue"
+        style="background-color: rgb(153, 111, 196);color: rgb(221, 221, 55); width:50%; height: 20%; text-align:center; font-size: xx-large;">
+        <option value="">Please Select</option>
+        <option value="badminton">Badminton</option>
+        <option value="Cricket">Cricket</option>
+        <option value="Hockey">Hockey</option>
+        <option value="chess">chess</option>
+    
+    </select>
+    <div style="margin-left: 20px; margin-right: 20px;">
+        <h1 style="background-color: aquamarine;">Newpapers</h1>
+        <h5 style="font-size:larger;">ET</h5>
+        <h5 style="font-size: larger;">Hindu</h5>
+        <h5 style="font-size: larger;">Tech Guru</h5>
+    </div>
+    <br>
+    <div>
+        <img  style="width: 33%; height: 200px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVJlmD7hY9jvWEIJt8Q--NEI1DReG_WPEQOw&usqp=CAU">
+        <img style="width: 33%; height: 200px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzwoktPnc3iqB6XBFBcFhDl779Z3o3J9mcCA&usqp=CAU">
+        <img  style="width: 33%; height: 200px;"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7nbWke2H-LIWfsJqRKc3SFzuMR7vcAZr2Fg&usqp=CAU">
+        
+    </div>
+</div>

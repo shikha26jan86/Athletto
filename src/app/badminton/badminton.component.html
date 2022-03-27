@@ -1,0 +1,38 @@
+<p>badminton works!</p>
+
+<div>
+    <div >
+        <h1 style="background-color: aqua;height: 10%; width: 30%;"> ABC BADMINTON </h1>
+        <img style="width:33%" class="rounded-circle"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUxxFCd6icb5JiBWzyiw-86gmWwmzK05Rnrw&usqp=CAU">
+        <img style="width:33%" class="rounded-circle"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr6W6_wkrLqXnedGMO_Bels0he6DgxFLCBEw&usqp=CAU">
+        <img style="width:33%" class="rounded-circle"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLvAgS0enLlHy_MXiPMilvtTPe6XIxCCzv7w&usqp=CAU">
+        <button style="position: relative; z-index: 1; float: left">BOOK</button>
+    </div>
+</div>
+
+<div>
+    Date :
+
+</div>
+<br>
+<form [formGroup]="myFormGroup">
+    Enter first value : <input type="text" formControlName="firstVal">
+    <br>
+    Enter second value : <input type="text" formControlName="secondVal">
+    <br>
+    <button (click)="showValues()">Show Values</button>
+</form>
+
+
+<form [formGroup]="shikha">
+  Eneter email : <input type="text" formControlName="Email"><br><br>
+  Eneter Password : <input type="text" formControlName="Password"><br><br>
+  Enter phone no.  : <input type=" text" formControlName="Phone"><br>
+
+  <br><br>
+  <button (click)="showValues()">Show Values</button>
+</form>
+IS SHIKHA VALID-> {{shikha.valid}}

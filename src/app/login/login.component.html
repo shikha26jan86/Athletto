@@ -1,0 +1,28 @@
+<p>login works!</p>
+
+<h1>LOGIN PAGE</h1>
+<div>
+    <form FormGroup=loginFormGroup>
+         Email   :<input type="text" formControlName="Email"><br><br>
+         Password:<input type="text" formControlName="Password"><br><br>
+         Gender:  <input type="text" formControlName="Gender"><br><br>
+         Phone no:<input type="text" formControlName="Phone"><br><br>
+         Highest Qualification :<select formControlName="Qualification"><br><br>
+             <option>10th</option>
+             <option>12th</option>
+             <option>Bsc</option>
+             <option>Bcom</option>
+             <option>MCA</option>
+            </select>
+        Age :  10 :   <input type="checkbox" value="10" formControlName="Age">
+               20 : <input type="checkbox" value="20">
+               30 :  <input type="checkbox"  value="30">
+         
+
+               <br><br>
+               <button (click)="Submit()">SUBMIT</button>
+    </form>
+<br><br>
+<button>LOGIN</button>
+<br><br>
+</div>

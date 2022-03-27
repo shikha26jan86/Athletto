@@ -21,6 +21,7 @@ export class BookComponent implements OnInit {
    Email: new FormControl(''),
 
     });
+    console.log("hhh")
   }
   callValue(value){
     if(value=="badminton")

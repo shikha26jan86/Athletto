@@ -17,6 +17,7 @@ constructor(private fb: FormBuilder) { }
       firstVal: new FormControl(''),
       secondVal: new FormControl('dddddddd', Validators.email),
     });
+    console.log("hi");
 
     this.shikha = new FormGroup({
       Email: new FormControl('',[Validators.required]),
